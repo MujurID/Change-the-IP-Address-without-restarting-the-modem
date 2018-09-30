@@ -1,0 +1,25 @@
+#sgbshare
+cara ganti IP internet tanpa ribet restart modem router :) Windows Only
+.=======================================================
+allow windows-script & office-macro (yang pakai smadav)
+.
+aktifin "telnet client" dan "telnet server" di Windows Features
+.
+edit script pakai notepad
+"192.168.1.254" ganti dengan ip gateway mu
+"admin" ganti dengan password modem router mu (bukan password wifi)
+"wan node index 2" ganti dengan PVC yang aktif buat internet, cek di webpage status modem router yang ip addressnya keisi
+"wan node index 1" untuk PVC0
+"wan node index 2" untuk PVC1
+"wan node index 3" untuk PVC2
+"wan node index 4" untuk PVC3
+"wan node index 5" untuk PVC4
+.
+ganti file "gantiip.txt" menjadi "gantiip.vbs". tinggal run deh file nya
+.=======================================================
+dah itu saja. selebihnya bisa tanya tanya di komentar :) atau menambahkan
+.
+Tested by Me :)
+.
+********
+memanfaatkan fitur telnet dan disable enable pvc untuk mendapatkan ip internet baru :)
